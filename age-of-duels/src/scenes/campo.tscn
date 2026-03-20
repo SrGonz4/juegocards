@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://v83jdt177qqi"]
+
+[ext_resource type="PackedScene" uid="uid://cwiusbbgig811" path="res://escenario/escenariobeta.glb" id="1_lwboy"]
+[ext_resource type="Script" uid="uid://ikvcx26j4d2u" path="res://src/scenes/campo.gd" id="2_t5njo"]
+[ext_resource type="PackedScene" uid="uid://rc7cqj7qu0oy" path="res://src/scenes/Rey.tscn" id="3_x2tjm"]
+
+[node name="escenariobeta" unique_id=503405643 instance=ExtResource("1_lwboy")]
+script = ExtResource("2_t5njo")
+escena_rey = ExtResource("3_x2tjm")
+
+[node name="PosReyJugador" type="Marker3D" parent="." index="1" unique_id=541345723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.70289, -2.6781044, 0)
+
+[node name="PosReyEnemigo" type="Marker3D" parent="." index="2" unique_id=687620076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.5101, 0, 0)
