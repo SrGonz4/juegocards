@@ -3,7 +3,7 @@ extends Node3D
 var vida = 200
 var es_enemigo = false
 
-func recibir_dano(cantidad):
+func recibir_danio(cantidad):
 	vida -= cantidad
 	print(name, "vida:", vida)
 
